@@ -1,0 +1,248 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+body {
+    background-color: #82F98E;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.container {
+    width: 90%; /* Cambia según tus necesidades */
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Barra de navegación */
+nav {
+    background: #830D78;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+li a:hover {
+    background: black;
+    transition: 3s;
+}
+
+/* Sección de Banner */
+section.banner {
+    padding: 2rem 0;
+    min-height: 80vh;
+}
+
+.containerB {
+    text-align: center;
+    position: relative;
+}
+
+.imgBanner-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/maked music.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Ajusta según tus necesidades */
+    max-width: 1300px; /* Ajusta según tus necesidades */
+    height: auto; /* Ajusta automáticamente la altura según el contenido */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Sección de Ritmo */
+.ritmo {
+    padding: 2rem 0;
+    min-height: 80vh;
+}
+
+.containerS {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.boxS {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
+}
+
+.boxS img {
+    width: 100px;
+}
+
+/* Sección de Tema */
+.tema {
+    padding: 2rem 0;
+    min-height: 80vh;
+}
+
+.containerP {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.boxP {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /8%);
+}
+
+.boxP img {
+    width: 100px;
+}
+
+/* Pie de Página - Footer */
+footer {
+    background-color: #4c4c4c;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #080605;
+    margin-top: 8px;
+    margin-left: 95px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 95px;
+    opacity: 75%;
+}
+
+.overlay h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: #fff;
+    opacity: 65%;
+}
+
+.btnBanner {
+    background: #840000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Círculos */
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+}
+
+.circle img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.circle a {
+    margin: 0;
+    color: greenyellow;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle a:hover {
+    background: black;
+    transition: 3s;
+}
+
+/* Estilos para el Rectángulo con Foto */
+.rectangle {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.rectangle img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+}
